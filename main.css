@@ -1,0 +1,42 @@
+body {
+	position: absolute;
+	background: url('bgc.jpg') no-repeat center center fixed;
+	background-size: 300vw 300vw;
+	ba
+}
+h {
+	text-shadow: 0 0 10px #232323;
+}
+.seeDiv {
+	border: 1px solid #FF00FF99;
+}
+.paths {
+	text-decoration: none;
+	color: #FFFF00;
+	transition: color 0.5s linear;
+	text-decoration: blink;
+}
+.paths:hover {
+	text-decoration: none;
+	color: #FF9900
+}
+@-webkit-keyframes pulsate {
+ 50% { color: #FFFF00; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #FFFF00; }
+}
+@keyframes pulsate {
+ 50% { color: #FFFF00; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #FFFF00; }
+}
+.pulsatePaths {
+  color: #FFFF00;
+  text-shadow: 0 -1px rgba(0,0,0,.1);
+  -webkit-animation: pulsate 1.2s linear infinite;
+  animation: pulsate 1.2s linear infinite;
+  transition: color 0.5s linear;
+  text-decoration: none;
+}
+.pulsatePaths:hover {
+  color: #FF9900;
+  text-shadow: 0 -1px rgba(0,0,0,.1);
+  -webkit-animation: pulsate 0.4s linear infinite;
+  animation: pulsate 0.4s linear infinite;
+}
